@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-gray-200" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div
+      class="bg-gray-100 shadow-lg w-[600px] h-[600px] mx-96 my-20 border-3 text-center p-10"
+    >
+      <h1 class="text-2xl font-bold">BMI CALCULATOR</h1>
+      <div
+        class="bg-white rounded-lg py-5 mt-5 shadow-lg ring-2 ring-white focus:outline-none p-2"
+      >
+        <label>Height</label><br />
+        <input
+          class="height h-7 w-80 my-4 focus:outline-none border-b-2 border-blue-500 p-2"
+          type="text"
+          placeholder="Enter Height Like 1.5m"
+        />
+      </div>
+      <!-- ------------------------------------------------------------------------------------- -->
+      <div
+        class="bg-white rounded-lg py-5 mt-5 shadow-lg ring-b-2 ring-white focus:outline-none"
+      >
+        <label>Weight</label><br />
+  <input class="weight h-7 w-80 my-4 focus:outline-none border-b-2 border-blue-500" type="text" placeholder="Enter weight as kg 55kg"/>
+      </div>
+      <button
+      class="bg-blue-600 mt-4 py-2 px-5 w-full rounded-lg text-white text-lg" onclick="Calculate()">Calculate</button>
+   <div class="justify-center ">
+    <p  class="py-3">your BMI is:</p>
+    <span class="bmi  mt-6  px-10 text-white bg-gray-600 ml-3 py-2  rounded-md h-6 w-10">00.00</span>
+   </div>
+
+      <div class="flex mt-5">
+        <p>Comment you are:</p>
+        <span class=" result mx-2 text-blue-500"></span>
+      </div>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
